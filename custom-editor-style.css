@@ -1,0 +1,258 @@
+/* ---- SIMPLE GRID ---- */
+
+div.row, div.column {
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+
+div.row{clear:both;}
+.row:before, .row:after {
+content: " ";
+display: table;
+}
+
+.row:after {
+clear: both;
+}
+
+.row:before, .row:after {
+content: " ";
+display: table;
+}
+	
+.one-half,.two-thirds,.one-third,.full-row {
+position: relative;
+width: 100%;
+}
+
+.line {
+margin-bottom:40px;
+}
+
+.column, .columns {
+margin-bottom:10px;
+}
+
+/* remove padding from rightmost column*/
+.row .column:last-child {
+padding-right:0px
+}
+
+
+/* CONTENT AREA */
+/* USE REMs  */
+
+.entry-content h3
+{
+margin: 10px 0px 2px 0px;
+}
+
+/* slideshow wrapper*/
+.sd2-ress-wrapper {
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+padding: 8px;
+border: 1px solid #e3e3e3;
+}
+
+.openingPara {
+padding-top: 20px;
+}
+/*- align date right on news and magazine single pages -*/
+
+article.category-news .entry-header,article.category-articles .entry-header{overflow: hidden;width: 100%;padding-bottom:4px;}
+article.category-news .entry-header h1,article.category-articles .entry-header h1{width: 70%;float: left;clear:left;}
+article.category-news .entry-header p.entry-date,article.category-articles .entry-header p.entry-date{float: right;position: relative;top: 9px;}
+
+.entry-content blockquote, .comment-content blockquote {
+background-color: #fafafa;
+border-left: 3px solid #AD0F35;
+margin-bottom: 40px;
+margin-bottom: 2.857142857rem;
+}
+
+.entry-content p + blockquote {
+margin-top: -20px;
+}
+.top-space {margin-top:30px;margin-top:2.142857142rem}
+img.col-space {margin-top:24px;margin-top:1.7142857rem}
+.list-entry-title img.attachment-post-thumbnail{float: right;margin: 20px;}
+.content-area-box {
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+margin: 0 14%;
+}
+
+.entry-content .content-area-box img{
+border-radius:0px;
+margin-top: 0px;
+border: 10px solid #f7f7f7;
+box-shadow: 2px 2px 1px #ccc;
+}
+
+.content-area-box  p{
+font-size: 13px;
+margin-bottom:6px;
+}
+
+.content-area-box img{
+margin-top: 0px;
+}
+
+.content-area-box  h4{
+color: #b20838;
+margin: 0px;
+border-bottom: 1px solid #f3f3f3;
+}
+
+.content-area-box-text{
+padding:2px;
+}
+
+.half-width{
+width:100%
+}
+
+.content-area-promo{
+clear:both;
+padding:10px;
+margin-top:10px;
+}
+
+.promo-box1{
+background:#ccc;
+}
+
+.promo-box2{
+border:1px solid red;
+}
+
+
+/*--captions --*/
+.promo-box h3.caption{
+width: 90%;
+display: block;
+font-size: 14px;
+font-size: 1rem;
+color: #333;
+letter-spacing: -1px;
+padding: 6px;
+margin:0 !important;
+}
+
+.promo-box h3.caption a {
+color: #333;
+}
+
+/*remove fancy borders */
+.entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image {
+border-radius: 0px;
+box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+h2.list-entry-title,h2.list-entry-title a{
+font-size:18px;
+font-size:1.285714285rem;
+}
+
+.content-footer p {
+margin: 0 0 24px;
+margin: 0 0 1.714285714rem;
+line-height: 1.714285714;
+}
+
+.entry-content a:visited, .comment-content a:visited{
+color:#808080;
+}
+
+.offer {
+padding: 5px;
+text-align: center;
+margin-bottom: 10px;
+font-size: 13px;
+overflow: hidden;
+border-left:5px solid #AD0F35;
+background:#eee;
+}
+
+.christmas-list2 {
+padding: 20px;
+background: url(/wp-content/themes/harveys/images/christmas_holly.png) no-repeat top 190px right 1px;
+}
+
+.christmas-list2 blockquote{
+color: #333;
+}
+
+.christmas-list2 .item{
+clear:both;
+}
+
+.christmas-list2 img {
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/*--in-page styles--*/
+/*--from Foundation--*/
+.panel {
+border-style: solid;
+border-width: 1px;
+border-color: #d9d9d9;
+margin-bottom: 1.25em;
+padding: 1.25em;
+background: #f2f2f2;
+}
+
+.panel.radius {
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+.panel.callout {
+border-style: solid;
+border-width: 1px;
+border-color: #2284a1;
+margin-bottom: 1.25em;
+padding: 1.25em;
+background: #2ba6cb;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+panel.callout > :first-child {
+margin-top: 0;
+}
+.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
+line-height: 1;
+margin-bottom: 0.625em;
+}
+.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p {
+color: white;
+}
+.panel > :first-child {
+margin-top: 0;
+}
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
+line-height: 1;
+margin-bottom: 0.625em;
+}
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
+color: #333333;
+}
+
+
+/*-post listing pages-*/
+.site-content article {
+margin-bottom:21px;
+margin-bottom:1.5rem;
+}
+
+.entry-summary .wp-post-image {
+float: right;
+margin-left: 30px;
+}
+
+
+

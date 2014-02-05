@@ -1,0 +1,457 @@
+/*
+Theme Name: Harveys
+Theme URI: http://harveysofhalifax.co.uk/
+Description: Child Theme of Twenty Twelve 
+Version: 0.1
+Author: Pete Murray
+Author URI: http://about.me/petemurray
+Template: twentytwelve
+License: GNU General Public License
+License URI: LICENSE
+*/
+
+@import url("../twentytwelve/style.css");
+/* HARVEYS RED  #AD0F35 was (#9e1b3c ) */
+
+/* ---- SIMPLE GRID ---- */
+
+div.row, div.column {
+box-sizing: border-box;
+}
+
+div.row{clear:both;}
+
+.row:before, .row:after {
+content: " ";
+display: table;
+}
+
+.row:after {
+clear: both;
+}
+
+.row:before, .row:after {
+content: " ";
+display: table;
+}
+	
+.one-half,.two-thirds,.one-third,.full-row {
+position: relative;
+width: 100%;
+}
+
+.column, .columns {
+margin-bottom:10px;
+}
+
+/*-------WIDGETS-----------*/
+.heading-visible .widget-title {
+display: block;
+}
+
+.heading-invisible .widget-title {
+display: none;
+}
+
+h3.widget-title {
+color: #AD0F35;
+font-size: 22px;
+font-size: 1.5714285714285rem;
+line-height: 2.181818182;
+text-transform: none;
+margin-bottom: 20px;
+margin-top: 8px;
+font-family: 'Roboto Slab';
+letter-spacing: -1px;
+font-weight:normal;
+}
+
+
+/* HEADER */
+/* allow orphaned pages which are part of that section to visually appear to live in a section by being bolded*/
+.main-navigation .current-page-ancestor > a  
+ {
+color: #636363;
+font-weight: bold;
+}
+
+/*secondary menu */
+
+.secondary-menu li{
+display: block;
+border-right:0px dotted #9e1b3c;
+margin: 0 0 10px 0;
+margin: 0 0 0.7143rem 0;
+}
+
+.secondary-menu {
+float:right;
+}
+
+.secondary-menu li:last-child{
+border:0px;
+margin:0px;
+padding:0px;
+}
+
+.secondary-menu li a:hover{
+color:#9e1b3c;
+}
+
+.secondary-menu li a{
+text-decoration:none;
+color:#333;
+font-size:90%;
+}
+
+img.header-image
+{box-shadow:0px 0px 0px;border-radius:0px;}
+
+/*--------MAIN MENU---------*/
+
+/*-----when narrow screen menu is dropped down----*/
+
+nav#site-navigation .toggled-on a{
+font-size:13px;
+font-size:0.9285714285rem;
+font-weight:bold;
+}
+
+
+nav#site-navigation .toggled-on a:hover{
+text-decoration:none;
+}
+
+nav#site-navigation .toggled-on a[href="#"] {
+text-decoration:none;
+font-weight:normal;
+}
+
+nav#site-navigation .toggled-on a[href="#"]:hover {
+text-decoration:none;
+color:#5e5e5e;
+}
+
+nav#site-navigation .toggled-on a{
+font-size:13px;
+font-size:0.9285714285rem;
+font-weight:bold;
+}
+
+nav#site-navigation .toggled-on>li{
+background-color: #eee;
+padding:10px;
+padding:0.7142857142rem;
+}
+
+nav#site-navigation a[href="#"] {
+text-decoration:none;
+cursor: context-menu;
+}
+
+h3.menu-toggle
+{
+font-size:16px;
+font-size:1.1428571428rem;
+}
+
+
+
+/* CONTENT AREA */
+/* USE REMs  */
+
+/* slideshow wrapper*/
+.sd2-ress-wrapper {
+box-sizing: border-box;
+padding: 8px;
+border: 1px solid #e3e3e3;
+}
+
+.content-area-box {
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.content-area-box-text{
+padding:2px;
+}
+
+.content-area-box  img{
+border-radius:0px;
+box-shadow: 0px 0px 0px;
+}
+
+.half-width{
+width:100%
+}
+
+.content-area-promo{
+clear:both;
+padding:10px;
+margin-top:10px;
+}
+
+.promo-box1{
+background:#ccc;
+}
+
+.promo-box2{
+border:1px solid red;
+}
+
+.site-content article {border-bottom: 0px}
+
+/*------FRONT PAGE TEMPLATE------*/
+.template-front-page .entry-content .row{
+margin-top:10px;
+}
+
+.template-front-page .entry-content .column{
+padding-right:0px;
+}
+
+.template-front-page .entry-content .promo-box{
+padding:10px;
+border:1px solid red;
+}
+
+.template-front-page .widget-area {
+border-top:0px;
+}
+
+.template-front-page #secondary .textwidget {
+padding:0px;
+box-shadow:none;
+}
+
+.template-front-page .widget p, .template-front-page .widget li, .template-front-page .widget .textwidget {
+font-size: 13px;
+font-size: 0.928571429rem;
+line-height: 1.846153846;
+}
+
+.template-front-page .widget {
+padding-right: 20px;
+box-sizing: border-box;
+}
+
+.template-front-page #secondary .widget {
+padding-right: 10px;
+padding-left: 0px;
+box-sizing: border-box;
+border-right: 1px dotted #e3e3e3;
+}
+
+.template-front-page #secondary .widget:first-child {
+padding-left: 0px;
+}
+
+.template-front-page #secondary .widget:last-child {
+border-right: 0px;
+}
+
+/* FOOTER */
+
+.footer-wrap{
+clear:both;
+background-color:#AD0F35;
+margin-top:60px;
+margin-top:4.2857142857rem;
+padding:40px 0px;
+padding:2.8571428rem 0rem;
+-moz-box-shadow: 0px -2px 2px #DCD5C6;
+-webkit-box-shadow: 0px -2px 2px #DCD5C6;
+box-shadow: 0px -2px 2px #DCD5C6;
+}
+
+footer[role="contentinfo"] {
+border-top: 0px solid #ededed;
+color:#F3F0ED;
+margin-top: 0;
+padding: 0px 24px;
+padding: 0rem 1.7142857rem;
+}
+
+footer[role="contentinfo"] a{
+color:#F3F0ED;
+}
+
+footer[role="contentinfo"] a:hover{
+color:#F3F0ED;
+text-decoration:none;
+}
+
+
+footer .social_media_entry {
+position: relative;
+}
+
+footer .social_media_txt {
+position: absolute;
+bottom: 18px;
+bottom: 1.28571428571rem;
+font-weight:bold;
+font-size:14px;
+font-size:1rem;
+padding-left: 5px;
+padding-left: 0.35714285714rem;
+}
+
+footer .widget-title
+{
+color:#F3F0ED;
+}
+
+footer .widget {
+float: left;
+width: 100%;
+box-sizing: border-box;
+margin-bottom: 40px;
+margin-bottom: 2.85714285rem;
+}
+
+.smallprint {
+font-size: 80%;
+}
+
+.newsletter p {
+margin-bottom: 10px;
+}
+
+footer p {
+margin: 0 0 24px;
+margin: 0 0 1.714285714rem;
+line-height: 1.714285714;
+}
+
+/* make the 1st, 4th, 7th widget start on a new line */
+footer .widget:nth-child(3n+1) {
+clear: left;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 600px) {
+	/*main menu */
+	.main-navigation li {
+	margin:0 32px 0 0;
+	margin:0 2.285714285714rem 0 0;
+	}
+	
+	.main-navigation li:last-child {
+	margin-right: 0px;
+	}
+	
+	/*make sure menu overlays content*/ 
+	.menu-main-container ul li,.main-navigation li ul {z-index:100}
+
+	/*secondary menu */
+	.secondary-menu {
+	float:right;
+	}
+
+	.secondary-menu li{
+	display: inline-block;
+	margin: 0 10px 0 0;
+	margin: 0 0.7143rem 0 0;
+	border-right:1px dotted #9e1b3c;
+	padding: 0 10px 0 0;
+	padding: 0 0.7143rem 0 0;
+	}
+
+	.site-content {
+	float: left;
+	width: 68%;
+	}
+	
+	/*--HOME TEMPLATE----*/
+	.template-front-page .entry-content .column{
+	padding-right:10px;
+	}
+	
+	.template-front-page #secondary .widget {
+	padding-left: 10px;
+	}
+	
+	/* ----- a simple grid -------*/
+	//[class*="column"] + [class*="column"]:last-child {
+	//padding-right:0px;
+	//float: right;
+	//}
+
+	.column, .columns {
+	position: relative;
+	float: left;
+	margin-bottom:0px;
+	}
+
+	.one-half {
+	position: relative;
+	width: 50%;
+	}
+
+	.two-thirds {
+	position: relative;
+	width: 66.66666%;
+	}
+
+	.one-third {
+	position: relative;
+	width: 33.33333%;
+	}
+	
+	.full-row{
+	position: relative;
+	width: 100%;
+	}
+
+	/*46.4 works with 20px padding on RHS */
+	.half-width{
+	width:46.4%;
+	}
+		
+	.content-area-box:nth-child(even){
+	float:right;
+	margin-right:0px;
+	}
+	
+	/*----------FOOTER-----------------*/
+	footer .widget {
+	float: left;
+	width: 33.2%;
+	padding-right: 40px;
+	padding-right: 2.85714285rem;
+	}
+	
+	footer .widget:nth-child(3n+0) {
+	padding-right:0;
+	}
+	
+	footer[role="contentinfo"] {
+	padding: 0px 24px;
+	padding: 0rem 1.714285714rem;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	/*--- PAGE----- */
+	body .site {
+	margin-bottom: 10px;
+	margin-bottom: .714rem;
+	box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+	padding-bottom:40px;
+	}
+
+	/*---FOOTER--- */
+	footer[role="contentinfo"] {
+	padding: 0px 40px;
+	padding: 0rem 2.85714285rem;
+	}
+}
+
+
+
+
+
+
