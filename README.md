@@ -1,4 +1,4 @@
-Harveys-WordPress-Theme
+Harveys WordPress Theme
 =======================
 
 WordPress theme for Harveys
