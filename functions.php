@@ -12,10 +12,10 @@ function harveys_widgets_init() {
 	) );
 	// register section sidebar
 	register_sidebar( array(
-		'name' => __( 'Section Sidebar', 'twentytwelve' ),
+		'name' => __( 'Content Footer Sidebar', 'twentytwelve' ),
 		'id' => 'sidebar-harveys-5',
-		'description' => __( 'Used to display items across department sections', 'twentytwelve' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'description' => __( 'Used to display items beneath the main content area', 'twentytwelve' ),
+		'before_widget' => '<aside id="%1$s" class="contentfooter widget %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
