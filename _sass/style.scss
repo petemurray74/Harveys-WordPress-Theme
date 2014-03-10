@@ -388,6 +388,12 @@ margin:0 !important;
 color: #333;
 }
 
+.content-area-box .wp-caption-text {
+color: #b20838;
+margin: 0px;
+border-bottom: 1px solid #f3f3f3;
+}
+
 /*remove fancy borders */
 .entry-content img, .comment-content img, .widget img, img.header-image, .author-avatar img, img.wp-post-image {
 border-radius: 0px;
