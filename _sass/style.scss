@@ -12,6 +12,7 @@ License URI: LICENSE
 
 /*@import '2012_style';*/
 @import '../twentytwelve/style.css';
+@import 'settings';
 
 $harveys-red:#AD0F35;
 
@@ -392,6 +393,9 @@ color: #333;
 color: #b20838;
 margin: 0px;
 border-bottom: 1px solid #f3f3f3;
+@include font-size(14);
+font-style:normal;
+font-weight:bold;
 }
 
 /*remove fancy borders */
