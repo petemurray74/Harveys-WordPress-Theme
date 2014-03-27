@@ -288,11 +288,12 @@ font-size:1.1428571428rem;
 
 
 /* CONTENT AREA */
-/* USE REMs  */
+/* USE REMs */
 
 .entry-content h3
 {
-margin: 10px 0px 2px 0px;
+margin: 2px 0px 15px 0px;
+@include line-height(21);
 }
 
 /* slideshow wrapper*/
