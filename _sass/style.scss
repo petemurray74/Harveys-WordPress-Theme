@@ -14,6 +14,13 @@ License URI: LICENSE
 @import '../twentytwelve/style.css';
 @import 'settings';
 
+/*
+MIXINS
+use pixel sizes
+@include line-height(xx)0
+@include font-size(xx);
+*/;
+
 $harveys-red:#AD0F35;
 
 /* HARVEYS RED  #AD0F35 was (#9e1b3c ) */
@@ -164,23 +171,26 @@ aside.widget p.lcp_post_title,aside.widget p.lcp_date,aside.widget p.lcp_excerpt
 
 div.lcp_post
 {
-margin-bottom:15px;
-margin-bottom:1.071428571428571rem;
-font-size: 13px;
-line-height: 23px;
+margin-bottom:10px;
+@include line-height(17);
+@include font-size(13);
+overflow:hidden;
 }
 
 .lcp_date {
-float: left;
-padding-right: 8px;
-font-weight: bold;
+clear:left;
+width:25%;
+padding-right:5px;
 }
 
- aside.widget span.lcp_date {
-font-size: 10px;
- font-size: 0.85rem;
- position:relative;
- }
+.lcp_news_title{
+font-weight:bold;
+}
+
+.lcp_post a:hover{
+text-decoration:none;
+}
+
 
 .widget-area .widget a:visited {
 color: #808080;

@@ -59,9 +59,8 @@ foreach ($this->catlist->get_categories_posts() as $single):
     //Show the title and link to the post:    
 	$lcp_display_output .= $this->get_date($single,'span','lcp_date');
 
-	$lcp_display_output .= $this->get_post_title($single,'p','lcp_post_title');
+	$lcp_display_output .= $this->get_post_title($single,'div','lcp_post_title');
 
-	
 
     //Show comments:
     //$lcp_display_output .= $this->get_comments($single);
