@@ -404,6 +404,10 @@ margin:0 !important;
 color: #333;
 }
 
+.wp-caption .wp-caption-text, .gallery-caption, .entry-caption {
+line-height: 1.5;
+}
+
 .content-area-box .wp-caption-text {
 color: #b20838;
 margin: 0px;
