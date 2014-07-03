@@ -21,7 +21,7 @@ use pixel sizes
 @include font-size(xx);
 */;
 
-$harveys-red:#AD0F35;
+
 
 /* HARVEYS RED  #AD0F35 was (#9e1b3c ) */
 
@@ -496,15 +496,16 @@ text-align: center;
 border-radius: 3px;
 }
 .panel.callout {
-border-style: solid;
-border-width: 1px;
-border-color: #2284a1;
+border-width: 0;
 margin-bottom: 1.25em;
--webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 0 0 0 rgba(255, 255, 255, 0.5) inset;
+box-shadow: 0 0 0 rgba(255, 255, 255, 0.5) inset;
 padding: 0.6em;
 background: $harveys-red;
-text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
+color:#fff;
+text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+letter-spacing: 1px;
+@include font-size(24); 
 }
 
 panel.callout > :first-child {
