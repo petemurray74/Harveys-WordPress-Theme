@@ -14,6 +14,14 @@
 		</header>
 
 		<div class="entry-content">
+        <?php
+        // adding optional notice to top of each page
+        if ( get_post_status ( 4295 ) == 'publish' ) {
+            ?><div class="panel callout"><?php
+                echo do_shortcode('[content_block id=4295]');
+            ?></div><?php        
+            }
+        ?>            
 			<?php the_content(); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
