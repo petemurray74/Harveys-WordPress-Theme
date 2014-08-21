@@ -7,13 +7,6 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<header class="entry-header">
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-		</header>
-
-		<div class="entry-content">
         <?php
         // adding optional notice to top of each page
         if ( get_post_status ( 4295 ) == 'publish' ) {
@@ -21,7 +14,15 @@
                 echo do_shortcode('[content_block id=4295]');
             ?></div><?php        
             }
-        ?>            
+        ?> 
+
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<header class="entry-header">
+			<h1 class="entry-title"><?php the_title(); ?></h1>
+		</header>
+
+		<div class="entry-content">
+           
 			<?php the_content(); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
