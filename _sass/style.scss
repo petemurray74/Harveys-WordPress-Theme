@@ -17,7 +17,7 @@ License URI: LICENSE
 /*
 MIXINS
 use pixel sizes
-@include line-height(xx)0
+@include line-height(xx);
 @include font-size(xx);
 */;
 
@@ -35,11 +35,15 @@ use pixel sizes
 /* ---- SIMPLE GRID ---- */
 
 div.row, div.column {
-box-sizing: border-box;
--moz-box-sizing: border-box;
+//box-sizing: border-box;
+//-moz-box-sizing: border-box;
 }
 
-div.row{clear:both;}
+div.row
+{
+    clear:both;
+}
+
 .row:before, .row:after {
 content: " ";
 display: table;
@@ -69,7 +73,7 @@ margin-bottom:10px;
 
 /* remove padding from rightmost column*/
 .row .column:last-child {
-padding-right:0px
+//padding-right:0px
 }
 
 /*-------RH STYLES----------*/
@@ -149,13 +153,14 @@ list-style-position: inside;
 margin-left: -6px;
 }
 
-
+/*
 #secondary .textwidget {
 padding: 16px;
 background-color:#f8f8f8;
 border-radius:0px;
 box-shadow: 1px 2px 3px #e3e3e3;
 }
+*/
 
 #secondary aside .current-menu-item a {
 text-decoration: none;
@@ -315,8 +320,8 @@ margin: 2px 0px 15px 0px;
 
 /* slideshow wrapper*/
 .sd2-ress-wrapper {
-box-sizing: border-box;
--moz-box-sizing: border-box;
+//box-sizing: border-box;
+//-moz-box-sizing: border-box;
 padding: 8px;
 border: 1px solid #e3e3e3;
 }
@@ -344,9 +349,9 @@ margin-top: -20px;
 img.col-space {margin-top:24px;margin-top:1.7142857rem}
 .list-entry-title img.attachment-post-thumbnail{float: right;margin: 20px;}
 .content-area-box {
--webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
--moz-box-sizing: border-box;    /* Firefox, other Gecko */
-box-sizing: border-box;         /* Opera/IE 8+ */
+//-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+//-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+//box-sizing: border-box;         /* Opera/IE 8+ */
 margin: 0 14%;
 }
 
@@ -392,6 +397,20 @@ background:#ccc;
 
 .promo-box2{
 border:1px solid red;
+}
+
+.product-box{
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 79%;
+    letter-spacing: 1px;
+    background: rgba(204,204,204,0.1);
+    margin: 0 10px 10px 0;
+    padding-bottom: 7px
+}
+
+.product-box img{
+    padding-bottom: 7px    
 }
 
 
@@ -512,7 +531,21 @@ background: $harveys-red;
 color:#fff;
 text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
 letter-spacing: 1px;
-@include font-size(24); 
+@include font-size(20); 
+line-height:1.4;
+    a{
+        color:#eee;
+    }
+}
+
+.panel.callout.blue {
+background: $harveys-secondary;
+color:#eee;
+text-shadow: 0px 0px 3px #1b5672;
+}
+
+.panel.callout.blue .head{
+color:#fff;    
 }
 
 panel.callout > :first-child {
@@ -539,13 +572,6 @@ margin-bottom: 0.625em;
 .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
 color: #333333;
 }
-
-.panel.blue {
-color: #fff;
-background: #006fba;
-border-color: #035D9A;
-}
-
 
 /*-post listing pages-*/
 .site-content article {
@@ -618,15 +644,15 @@ margin-bottom:1.4285714285714rem;
 
 .template-front-page .widget {
 padding-right: 20px;
-box-sizing: border-box;
--moz-box-sizing: border-box;
+//box-sizing: border-box;
+//-moz-box-sizing: border-box;
 }
 
 .template-front-page #secondary .widget {
 padding-right: 10px;
 padding-left: 0px;
-box-sizing: border-box;
--moz-box-sizing: border-box;
+//box-sizing: border-box;
+//-moz-box-sizing: border-box;
 border-right: 1px dotted #e3e3e3;
 }
 
@@ -709,8 +735,8 @@ color:#F3F0ED;
 }
 
 footer .widget {
-box-sizing: border-box;
--moz-box-sizing: border-box;
+//box-sizing: border-box;
+//-moz-box-sizing: border-box;
 margin-bottom: 40px;
 margin-bottom: 2.85714285rem;
 }
@@ -803,6 +829,11 @@ background: url(/wp-content/themes/harveys/images/saleBannerHeader.png) repeat-x
 	position: relative;
 	width: 50%;
 	}
+    
+    .one-quarter {
+	position: relative;
+	width: 25%;
+	}
 
 	.two-thirds {
 	position: relative;
@@ -832,6 +863,10 @@ background: url(/wp-content/themes/harveys/images/saleBannerHeader.png) repeat-x
 	.entry-content .column {
 	padding-right: 10px;
 	}
+    
+    footer .column {
+    padding-right: 20px;
+    }
 	
 	/* extra RHS padding when needed*/
 	.entry-content .row .padded{

@@ -45,8 +45,8 @@
 		</hgroup>
 
 		<?php $header_image = get_header_image();
-		if ( ! empty( $header_image ) ) : ?>
-			<a href="/"><img src="/wp-content/uploads/ret_Logo.png" class="header-image" width="250" height="58" class="header-image" width="250" height="58" alt="Harveys of Halifax - The Halifax Department Store" /></a>
+		if ( ! empty( $header_image ) ) : ?>		
+			<a href="/"><img srcset="/wp-content/uploads/ret_Logo.png, /wp-content/uploads/ret_Logo@2x.png 2x" class="header-image" width="250" height="58" class="header-image" width="250" height="58" alt="Harveys of Halifax - The Halifax Department Store" /></a>
 		<?php endif; ?>		
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
