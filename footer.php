@@ -22,6 +22,7 @@
 <p><strong>Open:</strong><br>
 Monday-Saturday<br>
 9.00am to 5.30pm</p>
+<p><a style="font-weight: bold;font-size: 17px;" href="/christmas-opening-hours/">Christmas opening times</a></p>
 
 <p>Harveys of Halifax<br>
 Commercial Street<br>
