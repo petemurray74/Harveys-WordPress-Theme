@@ -1,0 +1,38 @@
+
+.christmas-strapline {
+float:none;
+}
+
+@media screen and (min-width: 600px) {
+	.christmas-strapline {
+	margin-top:56px;
+	float:right;
+	}
+}
+
+
+
+/* ---------------FROM 2013 HERE FOR REF---------------*/
+/* check pages aren't live before deleteing these ---------*/
+
+.christmas-list2 {
+padding: 20px;
+background: url(/wp-content/themes/harveys/images/christmas_holly.png) no-repeat top 190px right 1px;
+}
+
+.christmas-list2 blockquote{
+color: #333;
+}
+
+.christmas-list2 .item{
+clear:both;
+}
+
+.christmas-list2 img {
+margin-top:0;
+}
+
+.christmas-list2 .row:first-child img {
+border-radius: 7px;
+}
+

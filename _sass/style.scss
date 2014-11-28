@@ -13,6 +13,7 @@ License URI: LICENSE
 /*@import '2012_style';*/
 @import '../../twentytwelve/style.scss';
 @import 'settings';
+@import 'christmas';
 
 /*
 MIXINS
@@ -480,26 +481,6 @@ border-left:5px solid $harveys-red;
 background:#eee;
 }
 
-.christmas-list2 {
-padding: 20px;
-background: url(/wp-content/themes/harveys/images/christmas_holly.png) no-repeat top 190px right 1px;
-}
-
-.christmas-list2 blockquote{
-color: #333;
-}
-
-.christmas-list2 .item{
-clear:both;
-}
-
-.christmas-list2 img {
-margin-top:0;
-}
-
-.christmas-list2 .row:first-child img {
-border-radius: 7px;
-}
 
 .small {font-size:80%}
 p.no-margin{margin:0}
