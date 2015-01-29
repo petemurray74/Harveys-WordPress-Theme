@@ -13,7 +13,6 @@ License URI: LICENSE
 /*@import '2012_style';*/
 @import '../../twentytwelve/style.scss';
 @import 'settings';
-@import 'christmas';
 
 /*
 MIXINS
@@ -23,8 +22,6 @@ use pixel sizes
 */;
 
 
-
-/* HARVEYS RED  #AD0F35 was (#9e1b3c ) */
 
 *,*:before,*:after
 {
@@ -75,6 +72,14 @@ margin-bottom:10px;
 /* remove padding from rightmost column*/
 .row .column:last-child {
 //padding-right:0px
+}
+
+/*-------TYPOGRAPHY----------*/
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Roboto Slab',Georgia,sans-serif; 
+    font-weight: normal;
 }
 
 /*-------RH STYLES----------*/
@@ -313,6 +318,10 @@ font-size:1.1428571428rem;
 /* CONTENT AREA */
 /* USE REMs */
 
+.content-header-banner img {
+max-width: 100%;
+}
+
 .entry-content h3
 {
 margin: 2px 0px 15px 0px;
@@ -356,12 +365,14 @@ img.col-space {margin-top:24px;margin-top:1.7142857rem}
 margin: 0 14%;
 }
 
+/*--
 .entry-content .content-area-box img{
 border-radius:0px;
 margin-top: 0px;
 border: 10px solid #f7f7f7;
 box-shadow: 2px 2px 1px #ccc;
 }
+
 
 .content-area-box  p{
 font-size: 13px;
@@ -381,6 +392,7 @@ border-bottom: 1px solid #f3f3f3;
 .content-area-box-text{
 padding:2px;
 }
+*/
 
 .half-width{
 width:100%
@@ -413,6 +425,48 @@ border:1px solid red;
 .product-box img{
     padding-bottom: 7px    
 }
+
+/* ------- styles for one-thirds -------------*/
+/* ------- Make more general to cover one-half once this style works -------------*/
+
+/*--------DELETE OVERLAPING STYLES---*/
+.content-area-box{
+    box-shadow: 1px 1px 2px 1px rgba(238, 238, 238 ,0.5);
+    margin:0;
+    img {
+        border:1px solid #eee;
+        box-shadow: none;
+        float:none;
+        margin:0;
+        border-bottom: 0;
+    }
+    p {
+        font-size: 0;
+        margin-bottom:0;
+    }
+    h4{
+        border: 0;
+        margin: 0;
+        color:$harveys-red;
+        font-weight:normal;
+        line-height:1.3;
+    }
+
+}
+.content-area-box-caption {
+        background:#fff;
+        padding: 5px 10px;
+        border: 1px solid #eee;
+        border-radius: 0px 0px 3px 3px;
+        font-family: 'Roboto Slab';
+        color: #3B3B3B;
+        font-weight: normal;
+    p {
+        font-size: 13px;
+        line-height:1.3;
+    }
+}
+    
 
 
 /*--captions --*/
@@ -754,8 +808,8 @@ background: url(/wp-content/themes/harveys/images/saleBannerHeader.png) repeat-x
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 600px) {
-	/*main menu */
+@media screen and (min-width: 768px) {
+	/*main menu was 600px */
 	.main-navigation li {
 	margin:0 32px 0 0;
 	margin:0 2.285714285714rem 0 0;
@@ -788,14 +842,6 @@ background: url(/wp-content/themes/harveys/images/saleBannerHeader.png) repeat-x
 	width: 68%;
 	}
 	
-	/*--HOME TEMPLATE----*/
-	.template-front-page .entry-content .column{
-	padding-right:10px;
-	}
-	
-	.template-front-page #secondary .widget {
-	padding-left: 10px;
-	}
 	
 	/* ----- a simple grid -------*/
 
@@ -835,6 +881,10 @@ background: url(/wp-content/themes/harveys/images/saleBannerHeader.png) repeat-x
 	.half-width{
 	width:46.4%;
 	}
+    
+    .content-area-box{
+	float:left;
+	}
 		
 	.content-area-box:nth-child(even){
 	float:right;
@@ -848,11 +898,39 @@ background: url(/wp-content/themes/harveys/images/saleBannerHeader.png) repeat-x
     footer .column {
     padding-right: 20px;
     }
+    
+    
+    .entry-content .one-third.column{
+      padding-right: 0;  
+    }
+
+    .one-third:last-child .content-area-box {
+    margin-left: 20px    
+    }
+
+    .one-third:first-child .content-area-box  {
+    margin-right: 20px
+    }
+
+    .one-third:nth-child(2) .content-area-box {
+    margin:0 10px;
+    }
+
 	
 	/* extra RHS padding when needed*/
 	.entry-content .row .padded{
 	padding-right: 25px;
 	}
+    
+    /*--HOME TEMPLATE----*/
+	.template-front-page .entry-content .column{
+	padding-right:10px;
+	}
+	
+	.template-front-page #secondary .widget {
+	padding-left: 10px;
+	}
+	
 	
 	/*----------FOOTER-----------------*/
 		
@@ -877,7 +955,6 @@ background: url(/wp-content/themes/harveys/images/saleBannerHeader.png) repeat-x
 
 	/*---FOOTER--- */
 	footer[role="contentinfo"] {
-	padding: 0px 40px;
-	padding: 0rem 2.85714285rem;
+	padding: 0;
 	}
 }
