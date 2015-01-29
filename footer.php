@@ -22,7 +22,6 @@
 <p><strong>Open:</strong><br>
 Monday-Saturday<br>
 9.00am to 5.30pm</p>
-<p><a style="font-weight: bold;font-size: 17px;" href="/christmas-opening-hours/">Christmas opening times</a></p>
 
 <p>Harveys of Halifax<br>
 Commercial Street<br>
@@ -54,10 +53,12 @@ We're a proud member of <a href="http://www.aistores.co.uk/" target="_new">Assoc
 <input id="MERGE1" name="MERGE1" size="25" type="text" value="" /><br>
 <label for="MERGE2">Last Name</label><br>
 <input id="MERGE2" name="MERGE2" size="25" type="text" value="" /><br>
-<label for="MERGE0"><strong>Email Address</strong><span class="asterisk" data-mce-mark="1">*</span></label>
+<label for="MERGE0"><strong>Email Address</strong><span class="asterisk" data-mce-mark="1">*</span></label><br>
 <input id="MERGE0" name="MERGE0" size="25" type="email" value="" /><br>
 <br>
-<input class="button" type="submit" value="Submit" />
+  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_d895e6fa1a9957d5236ccd4a0_9a7ad439f5" tabindex="-1" value=""></div>
+<div class="clear"><input class="button" type="submit" value="Submit" /></div>
 
 </form>
     <br>
