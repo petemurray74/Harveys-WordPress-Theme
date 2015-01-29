@@ -45,10 +45,19 @@ register_nav_menus( array(
 
 function harveys_scripts_styles()
 {
-	wp_enqueue_style( 'harveys-Robots-fonts', 'http://fonts.googleapis.com/css?family=Roboto+Slab' );
-	wp_enqueue_script( 'twentytwelve-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0', true );
+    global $wp_styles;
+	wp_enqueue_style( 'harveys-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700' );
+	wp_enqueue_script( 'twentytwelve-navigation', get_template_directory_uri() . '/js/xnavigation.js', array(), '1.0', true );
+    
+    /*
+	 * Loads the Internet Explorer specific stylesheet.
+	 */
+	wp_enqueue_style( 'twentytwelve-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentytwelve-style' ), '20121010' );
+	$wp_styles->add_data( 'twentytwelve-ie', 'conditional', 'lt IE 9' );
+    
 }
 add_action( 'wp_enqueue_scripts', 'harveys_scripts_styles',100 );
+
 
 /*----ADD ANALYTICS----*/
 function ga(){ ?>
@@ -74,6 +83,13 @@ function remove_twentytwelve_actions() {
 // Call 'remove_twentytwelve_actions' during WP initialization
 add_action('init','remove_twentytwelve_actions');
 
+
+function remove_default_stylesheet() {
+    wp_dequeue_style( 'twentytwelve-fonts' );
+}
+add_action( 'wp_enqueue_scripts', 'remove_default_stylesheet', 25 );
+
+
 // parent function tweaked to include sidebar-harveys-4 
 // otherwise if only sidebar-harveys-4 was active then the body class included 'full-width'
 //  
@@ -97,7 +113,7 @@ function harveys_body_class( $classes ) {
 		$classes[] = 'custom-background-white';
 
 	// Enable custom font class only if the font CSS is queued to load.
-	if ( wp_style_is( 'twentytwelve-fonts', 'queue' ) )
+	//if ( wp_style_is( 'twentytwelve-fonts', 'queue' ) )
 		$classes[] = 'custom-font-enabled';
 
 	if ( ! is_multi_author() )
