@@ -7,14 +7,14 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-    <?php
-    // adding optional notice to top of each page
-    if ( get_post_status ( 4295 ) == 'publish' ) {
-        ?><div class="panel callout"><?php
-            echo do_shortcode('[content_block id=4295 ]');
-        ?></div><?php        
-        }
-    ?>
+<div class="content-header-banner">
+        <?php
+        // adding optional notice to top of each page
+        if ( get_post_status ( 4295 ) == 'publish' ) {
+                echo do_shortcode('[content_block id=4295]');
+            }
+        ?> 
+</div>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="entry-content">            
