@@ -44,13 +44,10 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
 
-		<div class="header-logo row">
-		<div class="two-thirds column">		
-			<a href="/"><img src="http://harveysofhalifax.co.uk/wp-content/themes/harveys/images/christmas_logo.png" class="header-image" alt="Harveys of Halifax - The Halifax Department Store" style="margin-top:0"></a>
-		</div>
-		<div class="one-third column"><img src="http://harveysofhalifax.co.uk/wp-content/themes/harveys/images/christmas_strap.png" class="header-image christmas-strapline" alt="Harveys of Halifax - The Halifax Department Store">
-		</div>
-		</div>
+		<?php $header_image = get_header_image();
+		if ( ! empty( $header_image ) ) : ?>		
+			<a href="/"><img srcset="/wp-content/uploads/ret_Logo.png, /wp-content/uploads/ret_Logo@2x.png 2x" class="header-image" width="250" height="58" class="header-image" width="250" height="58" alt="Harveys of Halifax - The Halifax Department Store" /></a>
+		<?php endif; ?>		
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
