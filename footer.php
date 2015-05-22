@@ -22,7 +22,7 @@
 <p><strong>Open:</strong><br>
 Monday-Saturday<br>
 9.00am to 5.30pm</p>
-
+<p><strong>Closed Bank Holiday Monday 25 May</strong></p>                    
 <p>Harveys of Halifax<br>
 Commercial Street<br>
 Halifax<br>
@@ -43,7 +43,7 @@ Fax: 01422 348933<br>
 <hr />
 
 <img class="alignnone size-full wp-image-1481" style="margin-top: 20px;" src="http://harveysofhalifax.co.uk/wp-content/themes/harveys/images/footer_ais_logo.png" alt="aisLogo" width="68" height="53" /><br>
-We're a proud member of <a href="http://www.aistores.co.uk/" target="_new">Associated Independent Stores</a> </aside>
+We're a proud member of Associated Independent Stores</aside>
                     
 <aside id="custom_post_widget-3" class="widget-2 one-third column widget widget_custom_post_widget"><div class="newsletter">
 <h3 class="widget-title">Get our Newsletter</h3>
