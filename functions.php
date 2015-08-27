@@ -89,6 +89,21 @@ global $post;
 }
 add_action('wp_head', 'ga','50');
 
+function MailchimpGoal() 
+{
+?>
+<script type="text/javascript">
+	var $mcGoal = {'settings':{'uuid':'d895e6fa1a9957d5236ccd4a0','dc':'us1'}};
+	(function() {
+		 var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+		sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+	})(); 
+</script>
+<?php
+}
+add_action('wp_head', 'MailchimpGoal','30');
+
 
 function remove_twentytwelve_actions() {
     remove_action('body_class', 'twentytwelve_body_class');
