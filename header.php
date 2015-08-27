@@ -34,20 +34,25 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
-		<nav>
-		<?php
-		wp_nav_menu( array('container_class' => 'secondary-menu','theme_location' => 'secondary') ); 
-		?>
-		</nav>
-		<hgroup>
-			<h4 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h4>
-			<h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
-		</hgroup>
+		<div class="one-third column">
+			<hgroup>
+				<h4 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h4>
+				<h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
+			</hgroup>
 
-		<?php $header_image = get_header_image();
-		if ( ! empty( $header_image ) ) : ?>		
-			<a href="/"><img srcset="/wp-content/uploads/ret_Logo.png, /wp-content/uploads/ret_Logo@2x.png 2x" class="header-image" width="250" height="58" class="header-image" width="250" height="58" alt="Harveys of Halifax - The Halifax Department Store" /></a>
-		<?php endif; ?>		
+			<?php $header_image = get_header_image();
+			if ( ! empty( $header_image ) ) : ?>		
+				<a href="/"><img srcset="/wp-content/uploads/ret_Logo.png, /wp-content/uploads/ret_Logo@2x.png 2x" class="header-image" width="250" height="58" class="header-image" width="250" height="58" alt="Harveys of Halifax - The Halifax Department Store" /></a>
+			<?php endif; ?>	
+		</div>
+		<div class="two-thirds column">		
+			<nav>
+			<?php
+			wp_nav_menu( array('container_class' => 'secondary-menu','theme_location' => 'secondary') ); 
+			?>
+			</nav>
+		</div>
+	
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
