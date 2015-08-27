@@ -21,8 +21,8 @@
                 <div> <aside id="custom_post_widget-38" class="widget-1 one-third column widget widget_custom_post_widget"><h3 class="widget-title">The Store</h3>
 <p><strong>Open:</strong><br>
 Monday-Saturday<br>
-9.00am to 5.30pm</p>
-<p><strong>Closed Bank Holiday Monday 25 May</strong></p>                    
+9.00am to 5.30pm</p> 
+<strong>CLOSED Bank Holiday Monday 31 Aug</strong>              
 <p>Harveys of Halifax<br>
 Commercial Street<br>
 Halifax<br>
@@ -49,7 +49,8 @@ We're a proud member of Associated Independent Stores</aside>
 <h3 class="widget-title">Get our Newsletter</h3>
 <p>Sign up to receive exclusive offers and event invites</p>
 <form action="http://harveysofhalifax.us1.list-manage.com/subscribe/post" method="POST">
-<input name="u" type="hidden" value="d895e6fa1a9957d5236ccd4a0" /><input name="id" type="hidden" value="9a7ad439f5" /><label for="MERGE1">First Name</label><br>
+<input name="u" type="hidden" value="d895e6fa1a9957d5236ccd4a0" /><input name="id" type="hidden" value="9a7ad439f5" /><input type="hidden" value="web_form" name="MMERGE3" class="" id="MMERGE3">
+<label for="MERGE1">First Name</label><br>
 <input id="MERGE1" name="MERGE1" size="25" type="text" value="" /><br>
 <label for="MERGE2">Last Name</label><br>
 <input id="MERGE2" name="MERGE2" size="25" type="text" value="" /><br>
@@ -63,6 +64,10 @@ We're a proud member of Associated Independent Stores</aside>
 </form>
     <br>
 <p class="smallprint">You'll receive occasional mailings from Harveys. Your email address remains private and won't be shared with anyone. You can unsubscribe at any time.</p>
+
+<hr />
+
+<a target="_new" href="http://www.yorkshire.com/view/attractions/halifax/harveys-of-halifax-1360959"><img src="/wp-content/themes/harveys/images/welcome-to-yorkshire-footer.png" alt="Welcome to Yorkshire"></a>
 
 </div> </aside>
                     
